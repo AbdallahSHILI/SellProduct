@@ -33,6 +33,9 @@
     #00000010,
     #00000080
   );
+  .Height {
+    height: 50vh;
+  }
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
