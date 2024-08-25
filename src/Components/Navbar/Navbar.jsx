@@ -2,11 +2,18 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { links } from "./data";
+import Button from "../Button/Button";
+
+import { Lobster } from "next/font/google";
+const logoFont = Lobster({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
+      <Link href="/" className={`$styles.logo ${logoFont.className}`}>
         HexaShop
       </Link>
       <div className={styles.links}>
@@ -15,6 +22,7 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
+        <Button />
       </div>
     </div>
   );
