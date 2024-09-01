@@ -2,20 +2,13 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { links } from "./data";
-import Button from "../Button/Button";
-
-import { Lobster } from "next/font/google";
-const logoFont = Lobster({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import Button from "../../elements/Button/Button";
+import Logo from "../../elements/logo/logo";
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href="/" className={`$styles.logo ${logoFont.className}`}>
-        HexaShop
-      </Link>
+      <Logo />
       <div className={styles.links}>
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
