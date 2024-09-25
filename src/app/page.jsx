@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.col}>
-        <h1 className={styles.title}>Your One-stop e-commerce destination !</h1>
+        <h1 className={styles.title}>Your Best Online Shop Destination !</h1>
         <p className={styles.description}>
-          Descover a world of endless shopping{" "}
+          Descover a world of endless shopping
         </p>
         <button className={styles.button}>Shop Now</button>
       </div>
       <div className={styles.col}>
-        <Image src={Hero} alt="Hex" />
+        <Image src={Hero} alt="Hex" className={styles.img} />
       </div>
     </div>
   );
