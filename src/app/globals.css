@@ -1,6 +1,7 @@
 :root {
   --color-primary: #53c28b;
   --color-secondary: #bbb;
+  --size-border-radius:5px;
 }
 
 * {
